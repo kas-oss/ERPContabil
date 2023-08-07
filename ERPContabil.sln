@@ -65,15 +65,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demissao", "Microservicos\D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegistroServicosPrestados", "Microservicos\DepartamentoContabil\Livros\RegistroServicosPrestados\RegistroServicosPrestados.csproj", "{CDF0000F-2B7A-4D15-9C59-9A98E631A2C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admissao", "Microservicos\DepartamentoPessoal\Contatacao\Admissao\Admissao.csproj", "{0CCF2105-7FCB-4493-8C37-2AE15DD35ABB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Admissao", "Microservicos\DepartamentoPessoal\Contatacao\Admissao\Admissao.csproj", "{0CCF2105-7FCB-4493-8C37-2AE15DD35ABB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepasseFGTS", "Microservicos\DepartamentoPessoal\Repasse\RepasseFGTS\RepasseFGTS.csproj", "{D52AA8D5-5829-4125-84CA-8DF85B5F982B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepasseFGTS", "Microservicos\DepartamentoPessoal\Repasse\RepasseFGTS\RepasseFGTS.csproj", "{D52AA8D5-5829-4125-84CA-8DF85B5F982B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepasseINSS", "Microservicos\DepartamentoPessoal\Repasse\RepasseINSS\RepasseINSS.csproj", "{C884578E-4922-436D-8C69-7A6311CAE357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepasseINSS", "Microservicos\DepartamentoPessoal\Repasse\RepasseINSS\RepasseINSS.csproj", "{C884578E-4922-436D-8C69-7A6311CAE357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepasseIR", "Microservicos\DepartamentoPessoal\Repasse\RepasseIR\RepasseIR.csproj", "{E60CE00B-5C07-4CA3-A37B-32F940E0ED89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepasseIR", "Microservicos\DepartamentoPessoal\Repasse\RepasseIR\RepasseIR.csproj", "{E60CE00B-5C07-4CA3-A37B-32F940E0ED89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_ERP_CONTABIL", "UI\WEB_ERP_CONTABIL\WEB_ERP_CONTABIL.csproj", "{13C7C2B2-8998-4466-92D6-CC7A7B4371E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_ERP_CONTABIL", "UI\WEB_ERP_CONTABIL\WEB_ERP_CONTABIL.csproj", "{13C7C2B2-8998-4466-92D6-CC7A7B4371E7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0A21EF7D-F9EE-4A96-AEBB-29D945E4BB4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{13C7C2B2-8998-4466-92D6-CC7A7B4371E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13C7C2B2-8998-4466-92D6-CC7A7B4371E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13C7C2B2-8998-4466-92D6-CC7A7B4371E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A21EF7D-F9EE-4A96-AEBB-29D945E4BB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A21EF7D-F9EE-4A96-AEBB-29D945E4BB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A21EF7D-F9EE-4A96-AEBB-29D945E4BB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A21EF7D-F9EE-4A96-AEBB-29D945E4BB4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

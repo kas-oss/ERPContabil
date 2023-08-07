@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  web_erp_contabil:
+    image: ${DOCKER_REGISTRY-}weberpcontabil
+    build:
+      context: .
+      dockerfile: UI/WEB_ERP_CONTABIL/Dockerfile
+
+  admissao:
+    image: ${DOCKER_REGISTRY-}admissao
+    build:
+      context: .
+      dockerfile: Microservicos/DepartamentoPessoal/Contatacao/Admissao/Dockerfile
+
