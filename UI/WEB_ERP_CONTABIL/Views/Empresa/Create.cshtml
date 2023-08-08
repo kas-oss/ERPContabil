@@ -1,0 +1,270 @@
+﻿@{
+    ViewData["Title"] = "Adicionar Empresa";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <a asp-controller="Empresa" asp-action="Index" class="btn btn-app"><i class="fas fa-arrow-left"></i> Voltar</a>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
+                    <li class="breadcrumb-item"><a asp-controller="Empresa" asp-action="Index">Empresas</a></li>
+                    <li class="breadcrumb-item active">@ViewData["Title"]</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#infoGeral">Informações Gerais</a>
+                    </li>@*
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#enderecoContato">Endereço e Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#complementar">Complementar</a>
+                    </li>
+                    *@
+                </ul>
+            </div>
+            <div class="card-body">
+
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="infoGeral">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md text-center">
+                                        <div class="card-body box-profile text-center">
+                                            <div class="mb-2">
+                                                <img class="profile-user-img img-fluid img-circle" src="~/img/perfil.jpg" alt="User profile picture">
+                                            </div>
+                                            <a href="#" class="btn btn-dark btn-sm"><i class="fas fa-edit"></i> Carregar</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="cnpj">CNPJ</label>
+                                            <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ da empresa">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label>Data de Abertura</label>
+                                            <div class="input-group date">
+                                                <input type="date" class="form-control datetimepicker-input" name="reservationdate" id="reservationdate">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-3">
+
+                                        <label for="situacaoCadastral">Situação Cadastral</label>
+                                        <input type="text" class="form-control" id="situacaoCadastral" placeholder="Status">
+
+                                    </div>
+
+                                    <div class="col-md-4">
+
+                                        <label for="dataSituacaoCadastral">Data da Situação Cadastral</label>
+                                        <input type="date" class="form-control" id="dataSituacaoCadastral" placeholder="Data do Status">
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="razaoSocial">Nome Empresarial</label>
+                                            <input type="text" class="form-control" id="razaoSocial" placeholder="Digite a Nome Empresarial da empresa">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="nomeFantasia">Título do Estabelecimento (Fantasia)</label>
+                                            <input type="text" class="form-control" id="nomeFantasia" placeholder="Digite o Nome fantasia">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+
+                                        <label for="porte">Porte</label>
+                                        <input type="text" class="form-control" id="porte" placeholder="Digite o Porte da Empresa">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="cnae" title="Classificação Nacional de Atividades Econômicas (CNAE)">Atividade Econômica Principal</label>
+                                            <input type="text" class="form-control" id="cnae" placeholder="Digite o CNAE da empresa">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="cnae" title="Classificação Nacional de Atividades Econômicas">Atividades Econômicas Secundárias</label>
+                                            <input type="text" class="form-control" id="cnae" placeholder="Digite o CNAE da empresa">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+@*                    <div class="tab-pane fade" id="enderecoContato">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="mb-2">Endereço</h3>
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="logradouro">Logradouro</label>
+                                            <input type="text" class="form-control" id="logradouro" placeholder="Digite o logradouro">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="numero">Número</label>
+                                            <input type="text" class="form-control" id="numero" placeholder="Digite o número">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="complemento">Complemento</label>
+                                            <input type="text" class="form-control" id="complemento" placeholder="Digite o Complemento">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label for="cep">CEP</label>
+                                            <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="bairro">Bairro</label>
+                                            <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="municipio">Município</label>
+                                            <input type="text" class="form-control" id="municipio" placeholder="Digite o Município">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div class="form-group">
+                                            <label for="uf">UF</label>
+                                            <input type="text" class="form-control" id="uf" placeholder="Digite a UF">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="mb-2">Contatos</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="telefone">Telefone</label>
+                                            <input type="text" class="form-control" id="telefone" placeholder="Digite o telefone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Digite o email">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>*@
+
+@*                   <div class="tab-pane fade" id="complementar">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inscricaoEstadual">Inscrição Estadual</label>
+                                            <input type="text" class="form-control" id="inscricaoEstadual" placeholder="Digite a IE">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="inscricaoMunicipal">Inscrição Municipal</label>
+                                            <input type="text" class="form-control" id="inscricaoMunicipal" placeholder="Digite a IM">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="dtFimAtividade">Data Fim da Atividade</label>
+                                            <input type="text" class="form-control" id="dtFimAtividade" placeholder="Digite a Data Fim da Atividade">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="capitalSocial">Capital Social</label>
+                                            <input type="text" class="form-control" id="capitalSocial" placeholder="Digite o Valor do Capital Social">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="tipoCalculo">Tipo de Cálculo</label>
+                                            <select class="form-control" name="tipoCalculo" id="tipoCalculo" placeholder="Selecione">
+                                                <option value="1">Simples Nacional</option>
+                                                <option value="2">MEI</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>*@
+                
+                
+                
+                
+                
+                
+                </div>
+            </div>
+            <div class="card-footer text-right">
+                <button type="submit" class="btn  bg-gradient-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

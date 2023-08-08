@@ -21,3 +21,28 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  
+  rabbitmq:
+    ports:
+      - '15672:15672'
+      - '5672:5672'
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+
+  consul:
+    ports:
+      - '8500:8500'
+    command: ["consul", "agent", "-dev", "-client", "0.0.0.0"]
+  
+  mysql:
+    working_dir: /ERPContabil
+    volumes:
+      - '.:/ERPContabil'
+    environment:
+      MYSQL_ROOT_PASSWORD: admin123
+      MYSQL_DATABASE: erpcontabil
+      MYSQL_USER: erpcontabil
+      MYSQL_PASSWORD: admin123
+    ports:
+    - '8306:3306'

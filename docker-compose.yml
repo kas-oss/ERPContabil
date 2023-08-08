@@ -12,4 +12,12 @@ services:
     build:
       context: .
       dockerfile: Microservicos/DepartamentoPessoal/Contatacao/Admissao/Dockerfile
+    
+  consul:
+    image: consul:1.15.4
 
+  rabbitmq:
+    image: rabbitmq:3-management
+
+  mysql:
+    image: 'mysql:5.7.42'
